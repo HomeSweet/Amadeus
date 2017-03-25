@@ -19,6 +19,10 @@ public class MainPage {
         this.driver = driver;
     }
 
+    public void goToCategoryForSmartPhones() {
+        getMainCategorySmartPhones().click();
+    }
+
     public void selectSmartPhonesPage() {
         Actions action = new Actions(driver);
         action.moveToElement(getMainCategorySmartPhones()).build().perform();
